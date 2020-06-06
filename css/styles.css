@@ -1,0 +1,169 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+html,body {
+    font-family: 'Karla', sans-serif;
+    background: var(--LightGray);
+}
+
+P {
+    color: var(--GrayishBlue);
+}
+
+button {
+    padding: .8rem 6rem;
+    font-weight: 600;
+    color: var(--LightGray);
+    font-size: 1rem;
+    background: var(--BrightYellow);
+    border: none;
+    outline: none;
+}
+/* END OF GLOBAL STYLES */
+
+/* CONTAINER */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+}
+
+.container {
+    box-shadow: 1px 1px 1px  1px rgba(248, 242, 242, 0.548);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-layer {
+    background: #fff;
+}
+
+.content {
+    padding: 2rem 5rem;
+}
+
+.content h1 {
+    color: var(--Cyan);
+    font-size: 2rem;
+}
+
+.content h2 {
+    color: var(--BrightYellow);
+}
+
+.content P {
+    line-height: 1.5rem;
+}
+
+.content h1, 
+.contenth2, 
+.content p {
+    padding: 1rem 0;
+}
+
+.monthly {
+    background: var(--Cyan);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.monthly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptions {
+    padding: 1rem 2rem;
+}
+
+.descriptions h2, .descriptions h3, .descriptions h4 {
+    padding: .5rem 0;
+    color: #fff;
+    font-weight: 100;
+}
+
+.descriptions h2 {
+    font-weight: 600;
+}
+
+.descriptions h3 {
+    font-size: 1rem;
+    color: var(--LightGray);
+}
+
+.descriptions h3 span {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.descriptions .btn {
+    margin: 1rem .5rem;
+    border-radius: .4rem;
+}
+
+.descriptions .btn:hover {
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: hsla(179, 62%, 43%, 0.836);
+}
+
+.info-des h2 {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.info-des p {
+    color: var(--LightGray);
+    line-height: 1.5rem;
+}
+
+
+.info-des {
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+/* MEDIA QUARY FOR MOBILE */
+@media screen and (max-width: 751px) {
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .descriptions {
+        padding: 0;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
+
+/* END OF CONTAINER */
